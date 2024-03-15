@@ -1,21 +1,24 @@
 import React from 'react';
 import '../input.css';
 import '../Page/main.css';
+import { useState, useEffect } from 'react';
+import ListProjets from '../assets/projet.json';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
-import Modal from '../components/Modal';
-import Booki from '../assets/Booki.webp';
-import SophieBluel from '../assets/Sophie-Bluel.webp';
-import Nina from '../assets/Nina-Carducci.webp';
-import Kasa from '../assets/Kasa.webp';
-import Grimoire from '../assets/Mon-vieux-grimoire.webp';
 import Form from '../components/Form';
 
 
 
 
 function Home()  {
+  const [data, setData] = useState([]);
+
+    useEffect(() => {
+        setData(ListProjets);
+
+    }, [data]);
   return (
   <>
       <Header />
@@ -24,11 +27,15 @@ function Home()  {
           <p className=''>Bonjour je suis Solène! Passionée par le developpement je me suis dirigée vers une formation de developpeur Web avec Openclassroom. Voici donc les projets que j'ai pu réaliser.</p>
         </div>
         <div id='mes-travaux'>
-            <Card image={Booki} alt={"booki"} titre={"Booki"}/>
-            <Card image={SophieBluel} alt={"Sophie Bluel"} titre={"Sophie Bluel"}/>
-            <Card image={Nina} alt={"Nina Carducci"} titre={"Nina Carducci"}/>
-            <Card image={Kasa} alt={"Kasa"} titre={"Kasa"}/>
-            <Card image={Grimoire} alt={"Mon vieux grimoire"} titre={"Mon vieux grimoire"}/>
+          {data.length > 0 ? (
+            <>
+              {data.map((projet) => (
+                <Card image={projet.cover} titre={projet.title} />
+              ))}
+            </>
+            ) : (
+              <p>Une erreur est survenue lors de l'affichage des logements !</p>
+            )}
         </div>
       <Form/>
       <Footer />
@@ -37,3 +44,7 @@ function Home()  {
 }
 
 export default Home;
+                            
+
+                        
+        

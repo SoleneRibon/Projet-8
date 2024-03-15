@@ -2,13 +2,17 @@ import '../input.css';
 import React from "react";
 
 
+
 function Form () {
         const handleSubmit = (e) => {
             e.preventDefault()
             console.log(new FormData(e.target))
         }
+        
 
     return (
+
+        
         <div className='bg-orange-300'>
             <form className='m-5 font-roboto '
             onSubmit={handleSubmit}>

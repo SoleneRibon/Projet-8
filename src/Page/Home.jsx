@@ -24,7 +24,9 @@ function Home()  {
   
   <div className='md:text-lg 
                   xl:mr-7 xl:ml-7 xl:text-xl'>
+      
       <Header />
+      <h1>Ribon Solène developpeuse web</h1>
         <div className='bg-orange-600 p-5 font-roboto text-white
                         xl:flex '>
           <div className='w-full flex justify-center'>

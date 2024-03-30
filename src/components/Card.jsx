@@ -1,12 +1,9 @@
 import '../input.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import React from "react";
 import Modal from './Modal';
 
-
-
-
-function Card({ alt, projetDetails }) {
+function Card({ projetDetails }) {
   const [showModal, setShowModal] = useState(false);
   
   if (showModal) {
@@ -26,25 +23,20 @@ function Card({ alt, projetDetails }) {
 
   }
 
-  useEffect(() => {
-    console.log(showModal)
-  }, [showModal]);
-
-
   return (
     <>
       <div
         onClick={openModal}
         className='w-full 
                     lg:w-[450px]
-                    xl:w-[601px]'>
+                    xl:w-[600px]'>
         <div className='shadow-2xl m-6 rounded-lg overflow-hidden font-roboto text-orange-600 hover:cursor-pointer hover:ml-3 hover:mr-3 '>
 
-          <img className='w-full h-36
+          <img className='w-full max-w-full max-h-full object-contain
                                   md:h-52
                                   xl:h-56'
             src={projetDetails.cover}
-            alt={alt} />
+            alt={projetDetails.alt} />
 
           <div className='flex flex-row items-center justify-center h-12 
                                 md:h-16
@@ -54,14 +46,11 @@ function Card({ alt, projetDetails }) {
 
         </div>
       </div>
-      <div onClick={closeModal}
-        className={`fixed inset-0 bg-slate-400/60 w-full h-full flex justify-center items-center transition transition-opacity opacity-0 duration-300 ${showModal ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-       </div> 
+    
        {showModal && (
           
-        <Modal projetDetails={projetDetails} closeModal={closeModal} showModal={showModal}/>
+        <Modal projetDetails={projetDetails} closeModal={closeModal}/>
         
-            
       )}
       
     </>

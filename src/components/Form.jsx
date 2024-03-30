@@ -40,15 +40,15 @@ function Form () {
             onSubmit={sendEmail}>
                 <div className='flex flex-col lg:w-[600px] lg:m-auto'>
                     <label className='text-white 'htmlFor="name">Nom:</label>
-                     <input className='rounded-lg drop-shadow-lg md:h-10 ' type="text" name='name' id='nom' />   
+                     <input aria-label='Nom' className='rounded-lg drop-shadow-lg md:h-10 ' id="name" type="text" name='name' />   
                 </div>
                 <div className='flex flex-col lg:w-[600px] lg:m-auto'>
                     <label className='text-white ' htmlFor="firstname">Prénom:</label>
-                    <input className='rounded-lg drop-shadow-lg md:h-10'  type="text" name='firstname' id='prenom'/>
+                    <input aria-label='Prenom' className='rounded-lg drop-shadow-lg md:h-10' id="firstname" type="text" name='firstname'/>
                 </div>
                 <div className='flex flex-col lg:w-[600px] lg:m-auto'>
                     <label className='text-white' htmlFor="email">E-mail:</label>
-                    <input className='rounded-lg drop-shadow-lg md:h-10' type="email" name='email'/>    
+                    <input aria-label='E-mail' className='rounded-lg drop-shadow-lg md:h-10' id="email" type="email" name='email'/>    
                 </div>
                 <div className='flex flex-col lg:w-[600px] lg:m-auto'>
                     <label className='text-white' htmlFor="message">Contenu de votre mail: </label>

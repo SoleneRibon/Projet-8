@@ -7,7 +7,7 @@ import { RxDotFilled } from 'react-icons/rx';
 
 
 
-function Carrousel({pictures}) {
+function Carrousel({ pictures }) {
 
     const [currentImage, setCurrentImage] = useState(0);
     const nombreImg = pictures.length;
@@ -27,46 +27,49 @@ function Carrousel({pictures}) {
             setCurrentImage(currentImage + 1);
         }
     };
-    /*const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex)
-    }*/ 
-    /*<div className="absolute inset-x-0 bottom-0 flex justify-center">
-                {slides.map((slide, slideIndex) => (
-                    <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className="text-2xl cursor-pointer hover:text-gray-300 mr-2">
-                        <RxDotFilled />
-                    </div>
-                ))}
-            </div>*/
-       
-    
-    return ( 
+
+    const goToSlide = (slideIndex) => {
+        setCurrentImage(slideIndex)
+    }
+
+
+
+    return (
         <>
             <section className="mt-5">
-                
-                    {
+
+                {
                     pictures.map((picture, index) => {
-                                return (
-                        <img  key={index} className={index === currentImage ? 'carrouselimg actif' : 'carrouselimg'} src={picture} alt="" />
+                        return (
+                            <img key={index} className={`max-w-full max-h-full object-contain ${index === currentImage ? 'carrouselimg actif' : 'carrouselimg'}`} src={picture} alt="" />
                         )
                     })
-                    }
-                   
-         {pictures.length > 1 && (
-                <div  className="  w-10 h-10  absolute mt-10 top-24 left-16  hover: cursor-pointer hover:text-orange-600 
+                }
+
+                {pictures.length > 1 && (
+                    <div className="  w-10 h-10  absolute mt-10 top-24 left-16  hover: cursor-pointer hover:text-orange-600 
                                 md:top-32
                                 xl:top-48">
-                    <ChevronLeft onClick={prevImage} size={40} />
-                 </div>
+                        <ChevronLeft onClick={prevImage} size={40} />
+                    </div>
                 )}
-                {pictures.length > 1 && (            
-                <div  className="w-10 h-10 absolute mt-10 top-24 right-16  hover: cursor-pointer hover:text-orange-600 
+                {pictures.length > 1 && (
+                    <div className="w-10 h-10 absolute mt-10 top-24 right-16  hover: cursor-pointer hover:text-orange-600 
                                 md:top-32
                                 xl:top-48">
-                    <ChevronRight onClick={nextImage} size={40} />
-                </div>
+                        <ChevronRight onClick={nextImage} size={40} />
+                    </div>
                 )}
 
-               
+                {pictures.length > 1 && (
+                    <div className="flex justify-center mt-2">
+                        {pictures.map((slide, slideIndex) => (
+                            <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className="text-2xl cursor-pointer hover:text-gray-300 mr-2">
+                                <RxDotFilled />
+                            </div>
+                        ))}
+                    </div>
+                )}
             </section>
 
 

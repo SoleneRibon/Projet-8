@@ -1,63 +1,79 @@
 import '../input.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from "react";
-import {createPortal} from "react-dom";
 import Modal from './Modal';
 
 
-function Card({titre, image, alt}) {
-  const [showModal, setShowModal] = useState(false);
 
-  if(showModal) {
+
+function Card({ alt, projetDetails }) {
+  const [showModal, setShowModal] = useState(false);
+  
+  if (showModal) {
     document.body.classList.add('active-modal')
   } else {
     document.body.classList.remove('active-modal')
   }
 
-  
-    return (
-      <>
-        <button 
-          onClick={() => setShowModal(true)}
-          className='w-full'>
-          <div className='shadow-2xl m-6 rounded-lg overflow-hidden font-roboto text-orange-600 hover:cursor-pointer hover:ml-3 hover:mr-3'>
-                
-                  <img  className='w-full h-36' 
-                        src={image} 
-                        alt={alt}/> 
-                        
-                <div className='flex flex-row items-center justify-between min-h-12 '>
-                  <h2 className='ml-5'>{titre}</h2>
-                  <svg  className="w-6 h-6 object-cover mr-5"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        strokeWidth={1.5} 
-                        stroke="currentColor" >
-                    <path strokeLinecap="round" 
-                          strokeLinejoin="round" 
-                          d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" 
-                    />
-                  </svg>
-                </div>
-                
+  const openModal = () => {
+    setShowModal(true);
+    document.body.classList.add('active-modal');
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
+    document.body.classList.remove('active-modal');
+
+  }
+
+  useEffect(() => {
+    console.log(showModal)
+  }, [showModal]);
+
+
+  return (
+    <>
+      <div
+        onClick={openModal}
+        className='w-full 
+                    lg:w-[450px]
+                    xl:w-[600px]'>
+        <div className='shadow-2xl m-6 rounded-lg overflow-hidden font-roboto text-orange-600 hover:cursor-pointer hover:ml-3 hover:mr-3 '>
+
+          <img className='w-full h-36
+                                  md:h-52
+                                  xl:h-56'
+            src={projetDetails.cover}
+            alt={alt} />
+
+          <div className='flex flex-row items-center justify-center h-12 
+                                md:h-16
+                                xl:h-20 '>
+            <h2 className='ml-5'>{projetDetails.title}</h2>
           </div>
-        </button>
-        {showModal && 
-        createPortal(
-        <Modal closeModal={() => setShowModal
-          (false)}/>, 
-        document.body)}
-      </>
-    )
+
+        </div>
+      </div>
+      <div onClick={closeModal}
+        className={`fixed inset-0 bg-slate-400/60 w-full h-full flex justify-center items-center transition transition-opacity opacity-0 duration-300 ${showModal ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+       </div> 
+       {showModal && (
+          
+        <Modal projetDetails={projetDetails} closeModal={closeModal} showModal={showModal}/>
+        
+            
+      )}
+      
+    </>
+  )
+
 }
 
-export default Card; 
-              
-               
-                        
-           
-                
+export default Card;
 
-              
-       
+
+
+
+
+
+

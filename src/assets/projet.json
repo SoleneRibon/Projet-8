@@ -2,28 +2,96 @@
 [
     {
         "title":"Booki",
-        "cover":"https://i.ibb.co/jZyd3Vt/Booki.webp"
+        "cover":"https://i.ibb.co/jZyd3Vt/Booki.webp",
+        "pictures": [
+            "https://i.ibb.co/GpWBL7R/Booki-Deckstop.png",
+            "https://i.ibb.co/tK0CWbk/Booki-Tablette.png",
+            "https://i.ibb.co/YtG7JHC/Booki-Mobile1.png"  
+        ],
+        "description":"Le but de ce projet était de créer à l'aide d'une maquette au préalablement fournis, le frontend du site plus exactement le design du site, entièrement responsive en utilisant HTML et CSS. Il y a donc une version deckstop, mobile et tablette. J'avais déjà plusieurs bases en HTML et CSS ce qui a rendu le projet plutôt agréable à suivre.",
+        "outils":[
+                "https://i.ibb.co/qgmSLwg/Capture.png",
+                "https://i.ibb.co/3WtVT75/CSS.png"
+        ],
+        "imgLien":"https://i.ibb.co/m6Cr45b/Github.png",
+        "lien":"https://github.com/SoleneRibon/Projet-2.0.git"
         
     },
     {
         "title":"Sophie Bluel",
-        "cover":"https://i.ibb.co/RjjyBwd/Sophie-Bluel.webp"
+        "cover":"https://i.ibb.co/RjjyBwd/Sophie-Bluel.webp",
+        "pictures": [
+            "https://i.ibb.co/sqK5mM1/filtres.png",
+            "https://i.ibb.co/Dfs34R2/gallery.png",
+            "https://i.ibb.co/377xc1d/login-Page.png",
+            "https://i.ibb.co/3k7MMTB/modale.png"
+        ],
+        "description":"Pour ce projet, j'avais déjà une bonne base de code. J'avais le frontend de la page de login à coder, les filtres et leur comportement, ainsi que la modale avec la création et la suppression des élèments. J'ai énormement appris au sujet de javascript grâce à ce projet. Même si au début j'ai eu quelques difficultés à bien comprendre et maitriser la logique de ce langage, car j'en savais très peu à son sujet, une fois les cours bein appris et plusieurs visionnages de vidéos, j'ai fini par bien comprendre et apprecier toutes les possibilitées qui s'ouvraient à moi.",
+        "outils":[
+            "https://i.ibb.co/qgmSLwg/Capture.png",
+            "https://i.ibb.co/3WtVT75/CSS.png",
+            "https://i.ibb.co/k6Z6z6Z/JS.png"
+        ],
+        "imgLien":"https://i.ibb.co/m6Cr45b/Github.png",
+        "lien":"https://github.com/SoleneRibon/Projet-3.0.git"
         
     },
     {
         "title":"Nina Carducci",
-        "cover":"https://i.ibb.co/TWmPph6/Nina-Carducci.webp"
+        "cover":"https://i.ibb.co/TWmPph6/Nina-Carducci.webp",
+        "pictures": [
+            "https://i.ibb.co/StTP3Rp/NinaC.png",
+            "https://i.ibb.co/bv7CV13/optimisation.png",
+            "https://i.ibb.co/WBbSFH9/access-av.png",
+            "https://i.ibb.co/9Vhf7J9/acces-ap.png",
+            "https://i.ibb.co/3z39C27/rich-Snippet.png"
+        ],
+        "description":"Le projet Nina Carducci était un peu différent des autres, en effet pour celui-ci quasiment aucun code à fournir! Le but était d'optimiser le SEO du site et de le débugger. Pour m'aider dans cette tache j'ai utilisé Chrome DevTools, Schema.org, Google Rich Snippet ainsi que Google lighthouse. Ce projet m'a eclairé sur  les bonnes conduites à suivre pour avoir un code clair et rendre la navigation de mes sites plus agréable. ",
+        "outils":[
+            "https://i.ibb.co/nmt2W6H/SEO.png" 
+        ],
+        "imgLien":"https://i.ibb.co/m6Cr45b/Github.png",
+        "lien":"https://github.com/SoleneRibon/Projet-5.git"
         
     },
     {
         "title":"Kasa",
-        "cover":"https://i.ibb.co/GpFKYmr/Kasa.webp"
+        "cover":"https://i.ibb.co/GpFKYmr/Kasa.webp",
+        "pictures": [
+            "https://i.ibb.co/SrcQF3C/KasaHome.png",
+            "https://i.ibb.co/2czJKyc/Kasa-About.png",
+            "https://i.ibb.co/2Z7dwzf/fiche-Logement.png" 
+
+        ],
+        "description":"C'est grâce au projet Kasa que j'ai découvert React, je devais coder tout le frontend du site de A à Z en React et en SASS. De plus c'est ici que j'ai crée mes premières animations avec la création d'une collapse. J'ai beaucoup aimé apprendre à coder en React, je trouve react très agréable à utiliser et les bases plutôt simple à comprendre. J'ai eu des petites difficultés à entièrement comprendre le fonctionnement des props en pratique. Mais encore une fois rien qu'un peu de recherche sur internet et de pratique n'aurait pu surmonter. ",
+        "outils":[
+            "https://i.ibb.co/Zg8f6Jm/react.png" ,
+            "https://i.ibb.co/ZM8msSX/Sass.png"
+        ],
+        "imgLien":"https://i.ibb.co/m6Cr45b/Github.png",
+        "lien":"https://github.com/SoleneRibon/Projet-6.git"
         
     },
     {
         "title":"Mon vieux grimoire",
-        "cover":"https://i.ibb.co/5TyGdLL/Mon-vieux-grimoire.webp"
+        "cover":"https://i.ibb.co/5TyGdLL/Mon-vieux-grimoire.webp",
+        "pictures": [
+            "https://i.ibb.co/CPKV8L4/grimAcc.png",
+            "https://i.ibb.co/DgPTwp1/grim-Log-In.png" ,
+            "https://i.ibb.co/TLcksxB/Creation-Livre.png"
+        ],
+        "description":"Mon dernier projet était celui-ci, lui aussi était un peu différent des autres car cette fois-ci je ne devais pas m'occuper du frontend mais de l'entièreté du code backend. Le code du frontend était entièrement fournis, de mon coté je devais m'occuper de créer une base de données qui me permettrait de gérer les utilisateurs ainsi que les livres enregistrés dans la dite base. Je devais m'occuper de l'enregistrement des nouveaux utilisateurs, leur connexion et de comment ils allaient pouvoir ou non gérer les livres.",
+        "outils":[
+            "https://i.ibb.co/2nKDxDz/mongodb-thumbnail.webp",
+            "https://i.ibb.co/343Y2q9/pngfind-com-js-logo-png-6833893.png" ,
+            "https://i.ibb.co/wWFCGb2/Express-JS.png"  
+
+        ],
+        "imgLien":"https://i.ibb.co/m6Cr45b/Github.png",
+        "lien":"https://github.com/SoleneRibon/Projet-7.git"
         
     }
     
 ]
+
+    

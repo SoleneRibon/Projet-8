@@ -5,7 +5,7 @@ import '../input.css';
 
 function Header () {
     return (
-        <header className='m-5 '>
+        <header className=' '>
             <Nav />
         </header>
     )

@@ -28,20 +28,23 @@ function Card({ projetDetails }) {
       <div
         onClick={openModal}
         className='w-full 
+                    md:flex md:justify-center
                     lg:w-[450px]
                     xl:w-[600px]'>
-        <div className='shadow-2xl m-6 rounded-lg overflow-hidden font-roboto text-orange-600 hover:cursor-pointer hover:ml-3 hover:mr-3 '>
+        <div className='shadow-2xl m-6 rounded-lg overflow-hidden font-roboto text-[#6C3483] hover:cursor-pointer hover:ml-3 hover:mr-3 
+                        md:w-[80%] '>
 
-          <img className='w-full max-w-full max-h-full object-contain
-                                  md:h-52
-                                  xl:h-56'
+          <img className='w-full max-w-full max-h-32 object-fit
+                                  md:max-h-52 
+                                  lg:h-44
+                                  xl:h-54'
             src={projetDetails.cover}
             alt={projetDetails.alt} />
 
           <div className='flex flex-row items-center justify-center h-12 
                                 md:h-16
                                 xl:h-20 '>
-            <h2 className='ml-5'>{projetDetails.title}</h2>
+            <h3 className='ml-5 text-[#6C3483]'>{projetDetails.title}</h3>
           </div>
 
         </div>

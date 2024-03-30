@@ -35,7 +35,7 @@ function Form () {
     return (
 
         
-        <div className='bg-orange-300'>
+        <div className='bg-[#AC6FC6]'>
             <form ref={form} className='ml-5 mr-5 font-roboto '
             onSubmit={sendEmail}>
                 <div className='flex flex-col lg:w-[600px] lg:m-auto'>
@@ -55,7 +55,7 @@ function Form () {
                     <textarea className='rounded-lg drop-shadow-lg' name="message" id="message" cols="30" rows="8" ></textarea>    
                 </div>
                 <div className='lg:flex justify-center'>
-                <input className='mt-5 mb-5 bg-orange-600 text-white w-full h-12 rounded-lg lg:w-[600px] hover:cursor-pointer'type='submit' value="Envoyer"/>
+                <input className='mt-5 mb-5 bg-[#6C3483] text-white w-full h-12 rounded-lg lg:w-[600px] hover:cursor-pointer'type='submit' value="Envoyer"/>
                 </div>
             </form> 
         </div>       

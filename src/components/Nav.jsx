@@ -4,7 +4,7 @@ import '../input.css';
 
 function Nav () {
     return (
-        <nav className='flex justify-between font-roboto text-orange-600 font-medium
+        <nav className='flex justify-between font-roboto text-white font-medium bg-[#6C3483] p-5
                         xl:justify-end xl:text'>
             <a href="#à-propos" className='hover:underline
                                          xl:ml-8'> A propos</a>

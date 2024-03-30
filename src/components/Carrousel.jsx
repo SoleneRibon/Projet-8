@@ -41,21 +41,23 @@ function Carrousel({ pictures }) {
                 {
                     pictures.map((picture, index) => {
                         return (
-                            <img key={index} className={`max-w-full max-h-full object-contain ${index === currentImage ? 'carrouselimg actif' : 'carrouselimg'}`} src={picture} alt="" />
+                            <img key={index} className={`max-w-full max-h-full object-fit ${index === currentImage ? 'carrouselimg actif' : 'carrouselimg'}`} src={picture} alt="" />
                         )
                     })
                 }
 
                 {pictures.length > 1 && (
-                    <div className="  w-10 h-10  absolute mt-10 top-24 left-16  hover: cursor-pointer hover:text-orange-600 
+                    <div className="  w-10 h-10  absolute mt-10 top-24 left-16  hover: cursor-pointer hover:text-[#6C3483]
                                 md:top-32
+                                lg:top-48
                                 xl:top-48">
                         <ChevronLeft onClick={prevImage} size={40} />
                     </div>
                 )}
                 {pictures.length > 1 && (
-                    <div className="w-10 h-10 absolute mt-10 top-24 right-16  hover: cursor-pointer hover:text-orange-600 
+                    <div className="w-10 h-10 absolute mt-10 top-24 right-16  hover: cursor-pointer hover:text-[#6C3483]
                                 md:top-32
+                                lg:top-48
                                 xl:top-48">
                         <ChevronRight onClick={nextImage} size={40} />
                     </div>

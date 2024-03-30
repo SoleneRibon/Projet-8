@@ -44,27 +44,27 @@ function Modal({ closeModal, projetDetails }) {
                                 xl:text-xl 
                                 2xl:w-[60%] 2xl:max-w-[2000px] 2xl:h-[80%] 2xl:p-16 transition transition-opacity duration-1000 ${openModal ? 'opacity-100' : 'opacity-0'}`}
                     onAnimationEnd={handleAnimationEnd}>
-                    <h3 className='flex justify-center text-orange-500 text-lg font-medium
+                    <h4 className='flex justify-center text-[#6C3483] text-lg font-medium
                                     md:text-2xl
                                     lg:text-3xl
                                     xl:text-4xl
-                                    2xl:text-5xl'>{projetDetails.title}</h3>
+                                    2xl:text-5xl'>{projetDetails.title}</h4>
                     <Carrousel pictures={projetDetails.pictures} />
                     <button
-                        className='absolute top-1 right-1 w-7 h-7text-slate-100 hover:text-orange-600 '
+                        className='absolute top-1 right-1 w-7 h-7text-slate-100 hover:text-[#6C3483] '
                         onClick={handleCloseModal}>X</button>
                     <div>
-                        <h2 className='bg-orange-600 font-roboto text-white mt-5 p-2 rounded-t-lg'>Description</h2>
+                        <h2 className='bg-[#6C3483] font-roboto text-white mt-5 p-2 rounded-t-lg'>Description</h2>
 
                         <p className='mt-5 font-roboto'>{projetDetails.description}</p>
 
                     </div>
                     <div>
-                        <h2 className='bg-orange-600 font-roboto text-white mt-5 p-2 rounded-t-lg'>Technologies utilisées</h2>
+                        <h2 className='bg-[#6C3483] font-roboto text-white mt-5 p-2 rounded-t-lg'>Technologies utilisées</h2>
                         <ul className='flex flex-row justify-around mt-5 flex-wrap'>{tech}</ul>
                     </div>
                     <div className=''>
-                        <h2 className='bg-orange-600 font-roboto text-white mt-5 p-2 rounded-t-lg'>Lien</h2>
+                        <h2 className='bg-[#6C3483] font-roboto text-white mt-5 p-2 rounded-t-lg'>Lien</h2>
                         <div className='flex justify-center'>
                             <a className="" href={projetDetails.lien}><img className="mt-5 h-14  hover:h-20 hover:w-20 
                                                                                     md:h-16

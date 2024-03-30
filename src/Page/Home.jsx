@@ -22,12 +22,14 @@ function Home()  {
     }, [data]);
   return (
   
-  <div className='md:text-lg 
+  <div className='font-roboto
+                  md:text-lg 
                   xl:mr-7 xl:ml-7 xl:text-xl'>
       
       <Header />
-      <h1>Ribon Solène developpeuse web</h1>
-        <div className='bg-orange-600 p-5 font-roboto text-white
+      <h1 className='text-[#6C3483] flex justify-center text-center m-10 font-bold text-2xl
+                    md:text-3xl'>Ribon Solène developpeuse web</h1>
+        <div className='bg-[#6C3483] p-5 text-white
                         xl:flex '>
           <div className='w-full flex justify-center'>
             <img className="  rounded-full h-40 w-40 
@@ -35,7 +37,9 @@ function Home()  {
                               xl:h-56 xl:w-56 xl:m-auto " src={Photo} alt=" Ribon Solène" />
           </div>
           <div className='xl:mr-7'>
-            <h2 id='à-propos' className='font-semibold text-2xl md:text-3xl flex justify-center mb-5'>À propos</h2>
+            <h2 id='à-propos' className='font-semibold text-2xl flex justify-center mb-5
+                              md:text-3xl
+                              xl: '>À propos</h2>
             <p className='mb-5
                           xl:w-[900px]'>Bonjour je suis Solène! Pour en arriver là j'ai fait beaucoup de détours. En effet en commençant par une licence en biologie puis en passant par une licence de langue et civilisation japonaise, j'ai décidé de me lancer dans le developpement web. J'ai commencé à utiliser un ordinateur assez tôt, donc c'est devenu très vite naturel pour moi de taper sur un clavier. Entourée de beaucoup d'amis qui travaillent en tant que developpeur web et aillant eu un petit cours d'introduction au javascript quand j'étais en faculté de biologie, très vite ma curiosité a été piquée et j'ai donc décidé de faire mes recherches, puis de commencer une formation pour devenir developpeur web. C'est pour cela que j'ai décidé de suivre ma formation sur Openclassroom qui m'a été conseillé par un ami qui a lui même suivi cette formation. Ce portfolio a pour but de montrer ce que j'ai pu apprendre grâce à ma formation Openclassroom.</p>
           </div>

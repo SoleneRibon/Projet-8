@@ -3,7 +3,7 @@
     display: none;
     height: 160px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     animation: fade 2s ease;
 }
 .carrouselimg.actif {
@@ -22,6 +22,12 @@
 @media (min-width: 768px) { 
     .carrouselimg {
         height: 240px;
+
+    }
+ }
+ @media (min-width: 1024px) { 
+    .carrouselimg {
+        height: 350px;
 
     }
  }

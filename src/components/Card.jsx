@@ -37,7 +37,7 @@ function Card({ alt, projetDetails }) {
         onClick={openModal}
         className='w-full 
                     lg:w-[450px]
-                    xl:w-[700px]'>
+                    xl:w-[600px]'>
         <div className='shadow-2xl m-6 rounded-lg overflow-hidden font-roboto text-orange-600 hover:cursor-pointer hover:ml-3 hover:mr-3 '>
 
           <img className='w-full h-36

@@ -66,7 +66,7 @@ function Carrousel({ pictures }) {
                 {pictures.length > 1 && (
                     <div className="flex justify-center mt-2">
                         {pictures.map((slide, slideIndex) => (
-                            <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className="text-2xl cursor-pointer hover:text-gray-300 mr-2">
+                            <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className={`text-2xl cursor-pointer hover:text-gray-300 mr-2 ${slideIndex === currentImage ? 'text-[#6C3483]' : ''}`}>
                                 <RxDotFilled />
                             </div>
                         ))}

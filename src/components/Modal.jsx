@@ -36,13 +36,13 @@ function Modal({ closeModal, projetDetails }) {
     return (
         <>
             <div onClick={handleCloseModal}
-                className={`fixed inset-0 bg-slate-400/60 w-full h-full flex justify-center items-center transition transition-opacity opacity-0 duration-1000 ${openModal ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+                className={`fixed inset-0 bg-slate-400/60 w-full h-full flex justify-center items-center transition transition-opacity opacity-0 duration-500 ${openModal ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
                 </div>
                 <div className={`overflow-auto fixed z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-white text-slate-900
                                 p-10 w-4/5 h-[700px] 
                                 md:text-lg
                                 xl:text-xl 
-                                2xl:w-[60%] 2xl:max-w-[2000px] 2xl:h-[80%] 2xl:p-16 transition transition-opacity duration-1000 ${openModal ? 'opacity-100' : 'opacity-0'}`}
+                                2xl:w-[60%] 2xl:max-w-[2000px] 2xl:h-[80%] 2xl:p-16 transition transition-opacity duration-500 ${openModal ? 'opacity-100' : 'opacity-0'}`}
                     onAnimationEnd={handleAnimationEnd}>
                     <h4 className='flex justify-center text-[#6C3483] text-lg font-medium
                                     md:text-2xl

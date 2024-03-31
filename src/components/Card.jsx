@@ -37,7 +37,7 @@ function Card({ projetDetails }) {
           <img className='w-full max-w-full max-h-32 object-fit
                                   md:max-h-52 
                                   lg:h-44
-                                  xl:h-54'
+                                  xl:h-60'
             src={projetDetails.cover}
             alt={projetDetails.alt} />
 

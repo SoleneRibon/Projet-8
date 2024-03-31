@@ -53,7 +53,7 @@ function Home()  {
               ))}
             </>
             ) : (
-              <p>Une erreur est survenue lors de l'affichage des logements !</p>
+              <p>Une erreur est survenue lors de l'affichage des projets!</p>
             )}
         </div>
       <Form/>

@@ -20,6 +20,7 @@ function Form () {
           .then(
             () => {
               console.log('SUCCESS!');
+              alert("le mail a bien été envoyé")
             },
             (error) => {
               console.log('FAILED...', error.text);

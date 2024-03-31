@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Form from '../components/Form';
-import Photo from '../assets/Photo.jpg';
+import Portfolio from '../assets/Portfolio.jpg';
 
 
 
@@ -32,9 +32,9 @@ function Home()  {
         <div className='bg-[#6C3483] p-5 text-white
                         xl:flex '>
           <div className='w-full flex justify-center'>
-            <img className="  rounded-full h-40 w-40 
+            <img className=" rounded-full  h-40 w-40 object-contain 
                               md:h-44 md:w-44
-                              xl:h-56 xl:w-56 xl:m-auto " src={Photo} alt=" Ribon Solène" />
+                              xl:h-56 xl:w-56 xl:m-auto " src={Portfolio} alt=" Ribon Solène" />
           </div>
           <div className='xl:mr-7'>
             <h2 id='à-propos' className='font-semibold text-2xl flex justify-center mb-5

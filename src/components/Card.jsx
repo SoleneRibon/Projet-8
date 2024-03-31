@@ -28,11 +28,11 @@ function Card({ projetDetails }) {
       <div
         onClick={openModal}
         className='w-full 
-                    md:flex md:justify-center
+                    
                     lg:w-[450px]
                     xl:w-[600px]'>
         <div className='shadow-2xl m-6 rounded-lg overflow-hidden font-roboto text-[#6C3483] hover:cursor-pointer hover:ml-3 hover:mr-3 
-                        md:w-[80%] '>
+                         '>
 
           <img className='w-full max-w-full max-h-32 object-fit
                                   md:max-h-52 

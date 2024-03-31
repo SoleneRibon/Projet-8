@@ -11,7 +11,7 @@ function Modal({ closeModal, projetDetails }) {
 
 
     useEffect(() => {
-        console.log(openModal);
+        
     }, [openModal])
 
     const handleCloseModal = () => {

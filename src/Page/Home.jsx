@@ -46,17 +46,60 @@ function Home()  {
           </div>
         </div>
         </section>
-        <section className='bg-[#AC6FC6] text-white'>
-          <h2 className='flex justify-center font-semibold text-2xl '>Mes compétences</h2>
-            <div>
-              <div>
-                <h3>Compétences frontend</h3>
+        <section className='bg-[#AC6FC6] text-white pt-5'>
+          <h2 className='flex justify-center font-semibold text-2xl
+                        md:text-3xl '>Mes compétences</h2>
+            <div className='flex  flex-col
+                            xl:flex-row  xl:pb-10'>
+              <div className=' flex justify-center flex-col border-2 w-[80%] m-auto mt-5 p-2
+                            xl:max-w-[30%] xl:h-[350px]'>
+                <h3 className='flex justify-center text-xl font-semibold p-2
+                              md:text-2xl'>Frontend</h3>
+                <p className='text-center'>Développer et intégrer un site web frontend.</p>
+                <h3 className='flex justify-center text-xl font-semibold p-2
+                              md:text-2xl'>Outils utilisés</h3>
+                <ul className='p-2 grid grid-cols-2 gap-4 '>
+                    <li className=' p-2 rounded-full flex justify-center bg-white text-[#6C3483] '>HTML</li>
+                    <li className=' p-2 rounded-full flex justify-center bg-white text-[#6C3483] '>Javascript</li>
+                    <li className=' p-2 rounded-full flex justify-center bg-white text-[#6C3483] '>React</li>
+                    <li className=' p-2 rounded-full flex justify-center bg-white text-[#6C3483] '>SASS</li>
+                    <li className=' p-2 rounded-full flex justify-center bg-white text-[#6C3483] '>CSS</li>
+                    <li className=' p-2 rounded-full flex justify-center bg-white text-[#6C3483] '>Tailwind</li>
+                </ul>
               </div>
-              <div>
-                <h3>Compétences backend </h3>
+              <div className='flex justify-center flex-col border-2 w-[80%] m-auto mt-5 p-2
+                              xl:max-w-[30%] xl:h-[350px]' >
+                <h3 className='flex justify-center text-xl font-semibold p-2
+                              md:text-2xl'>Backend</h3>
+                <p className='text-center'>Créer un serveur express et le lier à une base de données de manière sécurisée. Ainsi que mettre en oeuvre des opérations CRUD.</p>
+                <h3 className='flex justify-center text-xl font-medium p-2
+                              md:text-2xl'>Outils utilisés</h3>
+                <ul className='p-2 grid grid-cols-2 gap-4 '>
+                  <li className=' p-2  rounded-full flex justify-center bg-white text-[#6C3483] '>NodeJS</li>
+                  <li className=' p-2  rounded-full flex justify-center bg-white text-[#6C3483] '>Express</li>
+                  <li className=' p-2  rounded-full flex justify-center bg-white text-[#6C3483] '>MongoDB</li>
+                  <li className=' p-2  rounded-full flex justify-center bg-white text-[#6C3483] '>API Rest</li>
+                </ul>
+                
               </div>
-              <div>
-                <h3>Softskills</h3>
+              <div className='flex justify-center flex-col border-2 w-[80%] m-auto mt-5 p-2 mb-10
+                              xl:max-w-[30%] xl:h-[350px]'>
+                <h3 className='flex justify-center text-xl font-semibold p-2
+                              md:text-2xl'>Softskills</h3>
+                <ul className='list-disc flex flex-col justify-center mb-5'>
+                  <li className='ml-[20%] 
+                                md: ml-[30%]
+                                lg: ml-[35%]
+                                xl: ml-[15%]'>Maitrise des méthodes agiles</li>
+                  <li className='ml-[20%] 
+                                md: ml-[30%]
+                                lg: ml-[35%]
+                                xl: ml-[15%]'>Mise en place de veilles technologiques</li>
+                  <li className='ml-[20%] 
+                                md: ml-[30%]
+                                lg: ml-[35%]
+                                xl: ml-[15%]'>Optimisation du SEO</li>
+                </ul>
               </div>
             </div>
         </section>
@@ -79,8 +122,10 @@ function Home()  {
   )
 }
 
-export default Home;       
+export default Home;  
+                        
                 
+                    
             
          
            

@@ -90,15 +90,15 @@ function Home()  {
                   <li className='ml-[20%] 
                                 md: ml-[30%]
                                 lg: ml-[35%]
-                                xl: ml-[15%]'>Maitrise des méthodes agiles</li>
+                                xl: ml-[10%]'>Maitrise des méthodes agiles</li>
                   <li className='ml-[20%] 
                                 md: ml-[30%]
                                 lg: ml-[35%]
-                                xl: ml-[15%]'>Mise en place de veilles technologiques</li>
+                                xl: ml-[10%]'>Mise en place de veilles technologiques</li>
                   <li className='ml-[20%] 
                                 md: ml-[30%]
                                 lg: ml-[35%]
-                                xl: ml-[15%]'>Optimisation du SEO</li>
+                                xl: ml-[10%]'>Optimisation du SEO</li>
                 </ul>
               </div>
             </div>
